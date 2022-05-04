@@ -3,6 +3,7 @@ rm a.out
 clear
 
 if gcc $1; then
+    echo ""
     ./a.out
 else
     echo "CRum Says: Compilation Error, Forced Rum? [y/n]"
@@ -15,6 +16,7 @@ else
         echo ""
 
         if a.out; then
+            echo ""
             ./a.out
         else
             echo "CRum Says: Fatal error on compilation, a.out not found."
