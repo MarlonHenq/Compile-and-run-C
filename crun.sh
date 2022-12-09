@@ -6,20 +6,20 @@ if gcc $1; then
     echo ""
     ./a.out
 else
-    echo "CRum Says: Compilation Error, Forced Rum? [y/n]"
+    echo "CRun Says: Compilation Error, Forced Run? [y/n]"
     read answer
 
     if "$answer" = "y"; then
 
         echo ""
-        echo "====FORCED RUM by CRum===="
+        echo "====FORCED RUN by CRun===="
         echo ""
 
         if a.out; then
             echo ""
             ./a.out
         else
-            echo "CRum Says: Fatal error on compilation, a.out not found."
+            echo "CRun Says: Fatal error on compilation, a.out not found."
         fi
         
     fi
